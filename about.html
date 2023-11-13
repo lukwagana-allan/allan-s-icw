@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>About</title>
+
+</head>
+
+<body class="grad">
+    <div class="head">
+        <h2>ALLAN'S BOOKSHOP</h2>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class="active">About</a>
+                </li>
+                <li>
+                    <a href="signup.html">Sign Up</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <img src="./menu.svg" class="imgx" onclick="toggleMenu();">
+        <div class="mob-menu" id="site-menu">
+            <ul>
+                <li>
+                    <a href="index.html" onclick="toggleMenu();">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" onclick="toggleMenu();" class="active">About</a>
+                </li>
+                <li>
+                    <a href="signup.html" onclick="toggleMenu();">Sign Up</a>
+                </li>
+                <li>
+                    <a href="contact.html" onclick="toggleMenu();">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <p>
+        Its a team of 3 dedicated humans <br>who aim to bring you the best<br>experience one can get from a product and
+        service.<br>Please dont hesitate to reach out with any questions or concerns.
+    </p>
+
+    <H3><b> LOCATION</b></H3>
+    <P>KAMPALA<BR>
+        NASSER ROAD <BR>
+
+    </P>
+    <H3><b>CONTACT US</b></H3>
+    <P>info@allan's stationary&bookshop.co.ug<BR>
+        +256788532519 <BR>
+        <a href="info@allan's stationary&bookshop.co.ug">Email us</a>
+        <br>
+        <a href="tel:+256788532519">call us</a>
+    </P>
+
+    <H3><b>OUR PRODUCTS</b></H3>
+    <P>BOOKS<BR>
+        OFFICE SUPPLIES <BR>
+        SCHOOL SUPPLIES<BR>
+        PRINTERY
+    </P>
+    <br>
+    <br>
+    <footer>
+        <p style="text-align: center">Copyright & Copy;All rights reserved</p>
+    </footer>
+    <script lang="javascript" type="text/javascript">
+        document.getElementById("site-menu").style.visibility = "hidden";
+        function toggleMenu() {
+            if (document.getElementById("site-menu").style.visibility == "hidden") {
+                document.getElementById("site-menu").style.visibility = "visible";
+            } else {
+                document.getElementById("site-menu").style.visibility = "hidden";
+            }
+        }
+    </script>
+</body>
+
+</html>

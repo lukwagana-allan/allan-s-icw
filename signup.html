@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Sign Up</title>
+
+</head>
+
+<body class="grad">
+    <div class="head">
+        <h2>ALLAN'S BOOKSHOP</h2>
+        <div class="nav">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+                <li>
+                    <a href="signup.html" class="active">Sign Up</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <img src="./menu.svg" class="imgx" onclick="toggleMenu();">
+        <div class="mob-menu" id="site-menu">
+            <ul>
+                <li>
+                    <a href="index.html" onclick="toggleMenu();">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" onclick="toggleMenu();">About</a>
+                </li>
+                <li>
+                    <a href="signup.html" onclick="toggleMenu();" class="active">Sign Up</a>
+                </li>
+                <li>
+                    <a href="contact.html" onclick="toggleMenu();">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <form class="Assurance">
+        <h2>SIGN UP</h2>
+        <label>Name</label>
+        <input type="text" placeholder="enter name">
+
+        <br><br> <label>Password</label>
+        <input type="password" required>
+
+        <br><br><label>Email</label>
+        <input type="email" placeholder="example@gmail.com">
+
+        <br><br><label>Contact</label>
+        <input type="text">
+
+        <br><br><label>Nationality</label>
+        <select>
+            <option>Ugandan</option>
+            <option>Tanzanian</option>
+            <option>Kenyan</option>
+            <option>Others</option>
+        </select>
+        <br><br><label>GENDER</label>
+        <br><br><label>MALE</label>
+        <input type="radio" name="GENDER">
+        <br><br><label>GENDER</label>
+        <br><br><label>FEMALE</label>
+        <input type="radio" name="GENDER">
+        <br><br><input type="checkbox"> I accept all terms and conditions.
+        <br><br>
+        <input type="reset" value="Cancel">
+        <button type="submit"><a href="index.html">Submit</a></button>
+
+
+    </form>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <p style="text-align: center">Copyright & Copy;All rights reserved</p>
+    </footer>
+    <script lang="javascript" type="text/javascript">
+        document.getElementById("site-menu").style.visibility = "hidden";
+        function toggleMenu() {
+            if (document.getElementById("site-menu").style.visibility == "hidden") {
+                document.getElementById("site-menu").style.visibility = "visible";
+            } else {
+                document.getElementById("site-menu").style.visibility = "hidden";
+            }
+        }
+    </script>
+</body>
+
+</html>
